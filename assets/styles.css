@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*font families*/
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,200&display=swap');
+/*end of font families*/
+
+/*Navbar*/
+.nav {
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #181818;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.nav #logo {
+margin-left: 25px;
+color: #3EB489;
+font-family: 'Monoton', cursive;
+font-size: 3rem;
+}
+
+.nav ul {
+  display: flex;
+  margin-right: 50px;
+}
+
+.nav ul li {
+  display: block;
+  margin: 15px;
+}
+
+.nav a {
+  font-size: 2rem;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3EB489;
+  overflow:hidden;
+  transition:all 0.5s;
+}
+
+.nav a:hover {
+color: #3EB489;
+}
+
+/*end of navbar*/
+
+/*welcome section*/
+.welcome-section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+}
+
+.welcome-section div {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-img {
+  margin-top: -3px;
+  position: relative;
+  object-fit: contain;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 8rem;
+}
+
+.desc {
+  font-size: 4rem;
+  color: #3EB489;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: italic;
+}
+/*welcome section ends*/
+
+/*project section*/
+.projects-section {
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  width: 100%;
+  height: 100%;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.project-list img {
+  width: 100%;
+  max-width: 550px;
+  height: 300px;
+  object-fit: fit;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #3EB489;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+figcaption {
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    max-width: 350px;
+    font-size: 1.5rem;
+}
+/*project section ends*/
+
+/*contact section*/
+#contact {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(300deg, #073b41, #2a655e, #235c4b, #040b14 90%);
+}
+
+.logo {
+  font-family: 'Monoton', cursive;
+  font-size: 10rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-shadow: 8px 6px 4px black;
+}
+
+.sub {
+  margin-top: -50px;
+  font-size: 4rem;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  text-shadow: 4px 3px 2px black;
+}
+
+.contact-links a {
+  font-size: 2.4rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: white;
+  margin: 75px 50px;
+  transition: transform 1s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  overflow: hidden;
+}
+
+.contact-links a:hover {
+  transform: scale(1.2);
+}
+/*contact section ends*/
+
+/*footer*/
+footer {
+  color: white;
+  background-color: #040C0E;
+  padding: 15px;
+}
+
+footer, a  {
+  font-size: 18px;
+  color: #FFFEF2;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+footer > span {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #A4978E;
+}
+/*end of footer*/
+
+/*Responsive design and queries*/
+
+@media only screen and (max-width: 1670px) {
+  .title {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+ 
+  .welcome-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+ 
+  .welcome-section .title {
+  font-size: 4rem;
+  }
+  
+  .main-img {
+    width: auto;
+    height: auto;
+    border-bottom: solid 1px black;
+  }
+  
+  .project-list img {
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+}
+  
+  .nav a {
+    font-size: 1.5rem; 
+  }
+  
+  .nav #logo {
+    font-size: 1.8rem;
+  }
+  
+  .logo {
+    font-size: 6rem;
+  }
+  
+}
